@@ -31,9 +31,13 @@
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
+                    {{#if logged_in}}
+                    <a class="nav-link" href="/dashboard">Dashboard</a>
+                    {{else}}
                     <li class="nav-item">
-                        <a class="nav-link" href="/dashboard">Dashboard</a>
+                        <a class="nav-link" href="/login">Dashboard</a>
                     </li>
+                    {{/if}}
                     {{#if logged_in}}
                     <button id="logout" class="btn btn-primary">Logout</button>
                     {{else}}
@@ -57,7 +61,7 @@
 
     <div class="container">
         <div class="row mt-5">
-            <div class="col-9 mt-5">
+            <div class="col mt-5">
                     {{{ body }}}
             </div>
         </div>
@@ -68,6 +72,7 @@
 
     {{#if logged_in}}
     <script src="/js/logout.js"></script>
+    <script src="/js/addComment.js"></script>
     {{/if}}
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
