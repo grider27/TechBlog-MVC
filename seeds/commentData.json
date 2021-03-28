@@ -1,0 +1,18 @@
+[
+  {
+    "user_id": 1,
+    "post_id": 3,
+    "comment": "Very interesting. thank you for sharing!"
+  },
+  {
+    "user_id": 2,
+    "post_id": 1,
+    "comment": "Very helpful!"
+  },
+  {
+    "user_id": 3,
+    "post_id": 1,
+    "comment": "Interesting read."
+  }
+  
+]
